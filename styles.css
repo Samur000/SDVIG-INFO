@@ -263,7 +263,7 @@ h3 {
 .mobile-nav-link {
 	display: flex;
 	align-items: center;
-	padding: 20px 24px;
+	padding: 5px 4px;
 	font-family: var(--font-heading);
 	font-size: 1.3rem;
 	font-weight: 600;
