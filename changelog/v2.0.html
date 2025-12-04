@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>v2.0 — Большое обновление — СДВиГ</title>
+	<meta name="description" content="История изменений СДВиГ. Версия 2.0 — новые функции навигации, архив задач, бэкап данных и настройки.">
+	
+	<!-- Favicons -->
+	<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="../apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../apple-touch-icon-152x152.png">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header-content">
+				<a href="../index.html" class="logo">СДВиГ</a>
+
+				<nav class="nav">
+					<a href="../index.html#features" class="nav-link">Возможности</a>
+					<a href="../index.html#benefits" class="nav-link">Преимущества</a>
+					<a href="../index.html#install" class="nav-link">Установка</a>
+					<a href="index.html" class="nav-link">Changelog</a>
+				</nav>
+
+				<a href="https://samur000.github.io/SDVIG/" target="_blank" class="btn btn-header">Открыть</a>
+
+				<button class="mobile-menu-btn" aria-label="Меню">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<!-- MOBILE MENU -->
+	<div class="mobile-menu">
+		<div class="mobile-menu-content">
+			<nav class="mobile-nav">
+				<a href="../index.html#features" class="mobile-nav-link">Возможности</a>
+				<a href="../index.html#whats-new" class="mobile-nav-link">Что нового</a>
+				<a href="../index.html#benefits" class="mobile-nav-link">Преимущества</a>
+				<a href="../index.html#install" class="mobile-nav-link">Установка</a>
+				<a href="index.html" class="mobile-nav-link">Changelog</a>
+			</nav>
+			<div class="mobile-menu-footer">
+				<a href="https://samur000.github.io/SDVIG/" target="_blank" class="mobile-menu-cta">
+					Открыть приложение
+				</a>
+				<a href="https://t.me/qafurov" target="_blank" class="mobile-menu-telegram">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+						<path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+					</svg>
+					Telegram
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- VERSION HERO -->
+	<section class="changelog-hero">
+		<div class="container">
+			<a href="index.html" class="back-link">
+				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+					<path d="M19 12H5M12 19l-7-7 7-7"/>
+				</svg>
+				История изменений
+			</a>
+
+			<div class="changelog-hero-content">
+				<div class="version-badge new">v2.0</div>
+				<h1>Большое обновление</h1>
+				<p class="changelog-date">Декабрь 2025</p>
+				<p class="changelog-desc">Навигация по датам, архив задач, бэкап данных, настройки профиля и полная миграция на IndexedDB.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- VERSION CONTENT -->
+	<section class="changelog-content">
+		<div class="container">
+			
+			<!-- Просмотр будущих и прошлых дат -->
+			<div class="changelog-section">
+				<div class="changelog-section-text">
+					<div class="changelog-section-header">
+						<div class="section-tag new">NEW</div>
+						<div class="changelog-section-info">
+							<h2>Просмотр будущих и прошлых дат</h2>
+							<p class="section-desc">Теперь можно просматривать задачи на любую дату — планируйте наперёд или анализируйте прошлое.</p>
+						</div>
+					</div>
+					<ul class="section-features">
+						<li>Переход к любой дате</li>
+						<li>Просмотр задач за прошлые дни</li>
+						<li>Планирование будущих дней</li>
+					</ul>
+				</div>
+				<div class="changelog-screenshot">
+					<div class="screenshot-frame">
+						<img src="../images/changelog/v2.0-1.png" alt="Просмотр даты" class="screenshot-image">
+					</div>
+				</div>
+			</div>
+
+			<!-- Листание недели -->
+			<div class="changelog-section">
+				<div class="changelog-section-text">
+					<div class="changelog-section-header">
+						<div class="section-tag new">NEW</div>
+						<div class="changelog-section-info">
+							<h2>Листание недели</h2>
+							<p class="section-desc">Удобная навигация по неделям с помощью стрелок и свайпов.</p>
+						</div>
+					</div>
+					<ul class="section-features">
+						<li>Стрелки влево/вправо для переключения недель</li>
+						<li>Поддержка свайпов на мобильных устройствах</li>
+						<li>Быстрый возврат к текущей неделе</li>
+					</ul>
+				</div>
+				<div class="changelog-screenshot">
+					<div class="screenshot-frame">
+						<img src="../images/changelog/v2.0-2.png" alt="Просмотр недели" class="screenshot-image">
+					</div>
+				</div>
+			</div>
+
+			<!-- Новая сортировка финансов -->
+			<div class="changelog-section">
+				<div class="changelog-section-text">
+					<div class="changelog-section-header">
+						<div class="section-tag new">NEW</div>
+						<div class="changelog-section-info">
+							<h2>Новая сортировка финансов</h2>
+							<p class="section-desc">Последние операции теперь отображаются сверху списка.</p>
+						</div>
+					</div>
+					<ul class="section-features">
+						<li>Новые записи сверху</li>
+						<li>Удобный просмотр последних операций</li>
+						<li>Логичный порядок отображения</li>
+					</ul>
+				</div>
+				<div class="changelog-screenshot">
+					<div class="screenshot-frame">
+						<img src="../images/changelog/v2.0-3.png" alt="Сортировка финансов" class="screenshot-image">
+					</div>
+				</div>
+			</div>
+
+			<!-- Дата создания и выполнения задач -->
+			<div class="changelog-section">
+				<div class="changelog-section-text">
+					<div class="changelog-section-header">
+						<div class="section-tag new">NEW</div>
+						<div class="changelog-section-info">
+							<h2>Дата создания и выполнения задач</h2>
+							<p class="section-desc">Каждая задача теперь хранит информацию о датах создания и выполнения.</p>
+						</div>
+					</div>
+					<ul class="section-features">
+						<li>Автоматическая фиксация даты создания</li>
+						<li>Запись даты выполнения при завершении</li>
+						<li>Отслеживание времени выполнения задач</li>
+					</ul>
+				</div>
+				<div class="changelog-screenshot">
+					<div class="screenshot-frame">
+						<img src="../images/changelog/v2.0-4.png" alt="Даты задач" class="screenshot-image">
+					</div>
+				</div>
+			</div>
+
+			<!-- Архив выполненных задач -->
+			<div class="changelog-section">
+				<div class="changelog-section-text">
+					<div class="changelog-section-header">
+						<div class="section-tag new">NEW</div>
+						<div class="changelog-section-info">
+							<h2>Архив выполнённых задач</h2>
+							<p class="section-desc">Все завершённые задачи сохраняются в архиве для анализа продуктивности.</p>
+						</div>
+					</div>
+					<ul class="section-features">
+						<li>Отдельный раздел архива</li>
+						<li>История всех выполненных задач</li>
+						<li>Статистика выполнения</li>
+					</ul>
+				</div>
+				<div class="changelog-screenshot">
+					<div class="screenshot-frame">
+						<img src="../images/changelog/v2.0-5.png" alt="Архив задач" class="screenshot-image">
+					</div>
+				</div>
+			</div>
+
+			<!-- Бэкап данных -->
+			<div class="changelog-section">
+				<div class="changelog-section-text">
+					<div class="changelog-section-header">
+						<div class="section-tag new">NEW</div>
+						<div class="changelog-section-info">
+							<h2>Бэкап данных</h2>
+							<p class="section-desc">Экспорт и импорт всех данных в формате JSON для резервного копирования.</p>
+						</div>
+					</div>
+					<ul class="section-features">
+						<li>Экспорт всех данных в JSON</li>
+						<li>Импорт из резервной копии</li>
+						<li>Перенос данных между устройствами</li>
+						<li>Защита от потери данных</li>
+					</ul>
+				</div>
+				<div class="changelog-screenshot">
+					<div class="screenshot-frame">
+						<img src="../images/changelog/v2.0-6.png" alt="Экспорт/импорт данных" class="screenshot-image">
+					</div>
+				</div>
+			</div>
+
+			<!-- Миграция на IndexedDB -->
+			<div class="changelog-section">
+				<div class="changelog-section-text">
+					<div class="changelog-section-header">
+						<div class="section-tag new">NEW</div>
+						<div class="changelog-section-info">
+							<h2>Миграция на IndexedDB</h2>
+							<p class="section-desc">Полный переход на IndexedDB для надёжного хранения больших объёмов данных.</p>
+						</div>
+					</div>
+					<ul class="section-features">
+						<li>Увеличенный лимит хранения</li>
+						<li>Более быстрая работа с данными</li>
+						<li>Надёжность хранения</li>
+						<li>Автоматическая миграция из localStorage</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<!-- Страница настроек -->
+			<div class="changelog-section">
+				<div class="changelog-section-text">
+					<div class="changelog-section-header">
+						<div class="section-tag new">NEW</div>
+						<div class="changelog-section-info">
+							<h2>Страница «Настройки»</h2>
+							<p class="section-desc">Новая страница настроек с быстрым доступом из профиля.</p>
+						</div>
+					</div>
+					<ul class="section-features">
+						<li>Кнопка настроек в правом верхнем углу страницы «Я»</li>
+						<li>Централизованное управление приложением</li>
+						<li>Настройки экспорта/импорта</li>
+						<li>Управление данными</li>
+					</ul>
+				</div>
+				<div class="changelog-screenshot">
+					<div class="screenshot-frame">
+						<img src="../images/changelog/v2.0-7.png" alt="Экран настроек" class="screenshot-image">
+					</div>
+				</div>
+			</div>
+
+			<!-- Аватарка профиля -->
+			<div class="changelog-section">
+				<div class="changelog-section-text">
+					<div class="changelog-section-header">
+						<div class="section-tag new">NEW</div>
+						<div class="changelog-section-info">
+							<h2>Аватарка профиля</h2>
+							<p class="section-desc">Возможность добавить персональную аватарку в профиль.</p>
+						</div>
+					</div>
+					<ul class="section-features">
+						<li>Загрузка изображения</li>
+						<li>Отображение в профиле</li>
+						<li>Персонализация приложения</li>
+					</ul>
+				</div>
+				<div class="changelog-screenshot">
+					<div class="screenshot-frame">
+						<img src="../images/changelog/v2.0-8.png" alt="Аватарка профиля" class="screenshot-image">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- OTHER VERSION -->
+	<section class="other-platform">
+		<div class="container">
+			<a href="v1.0.html" class="other-platform-link">
+				<span>Смотреть версию 1.0</span>
+				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+					<path d="M5 12h14M12 5l7 7-7 7"/>
+				</svg>
+			</a>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-brand">
+					<span class="footer-logo">СДВиГ</span>
+					<span class="footer-copy">© 2025</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../script.js"></script>
+</body>
+
+</html>

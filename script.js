@@ -16,29 +16,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initMobileMenu() {
 	const menuBtn = document.querySelector('.mobile-menu-btn');
-	const nav = document.querySelector('.nav');
-	const header = document.querySelector('.header');
+	const mobileMenu = document.querySelector('.mobile-menu');
+	const body = document.body;
 
-	if (!menuBtn || !nav) return;
+	if (!menuBtn || !mobileMenu) return;
 
+	// Create overlay
+	const overlay = document.createElement('div');
+	overlay.className = 'mobile-menu-overlay';
+	document.body.appendChild(overlay);
+
+	function openMenu() {
+		menuBtn.classList.add('active');
+		mobileMenu.classList.add('open');
+		overlay.classList.add('visible');
+		body.classList.add('menu-open');
+	}
+
+	function closeMenu() {
+		menuBtn.classList.remove('active');
+		mobileMenu.classList.remove('open');
+		overlay.classList.remove('visible');
+		body.classList.remove('menu-open');
+	}
+
+	// Toggle menu on button click
 	menuBtn.addEventListener('click', () => {
-		menuBtn.classList.toggle('active');
-		nav.classList.toggle('mobile-open');
+		if (mobileMenu.classList.contains('open')) {
+			closeMenu();
+		} else {
+			openMenu();
+		}
 	});
 
 	// Close menu on link click
-	nav.querySelectorAll('.nav-link').forEach(link => {
-		link.addEventListener('click', () => {
-			menuBtn.classList.remove('active');
-			nav.classList.remove('mobile-open');
-		});
+	mobileMenu.querySelectorAll('.mobile-nav-link').forEach(link => {
+		link.addEventListener('click', closeMenu);
 	});
 
-	// Close menu on click outside
-	document.addEventListener('click', (e) => {
-		if (!header.contains(e.target)) {
-			menuBtn.classList.remove('active');
-			nav.classList.remove('mobile-open');
+	// Close menu on CTA click
+	const cta = mobileMenu.querySelector('.mobile-menu-cta');
+	if (cta) {
+		cta.addEventListener('click', closeMenu);
+	}
+
+	// Close menu on overlay click
+	overlay.addEventListener('click', closeMenu);
+
+	// Close menu on Escape key
+	document.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+			closeMenu();
 		}
 	});
 }
